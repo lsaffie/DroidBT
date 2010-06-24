@@ -263,7 +263,7 @@ public class BluetoothChat extends Activity {
                 break;
             case MESSAGE_WRITE:
                 byte[] writeBuf = (byte[]) msg.obj;
-                // construct a string from the buffer
+                //construct a string from the buffer
                 String writeMessage = new String(writeBuf);
                 mConversationArrayAdapter.add("Me:  " + writeMessage);
                 break;

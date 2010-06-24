@@ -163,9 +163,9 @@ public class BluetoothChatService {
         mHandler.sendMessage(msg);
         
         // Send Data Accepted Acknowledge
-        //String accepted_code = new String("PWA1");
-        //byte[] send = accepted_code.getBytes();
-        //mConnectedThread.write(send);
+        String accepted_code = new String("PWA1");
+        byte[] send = accepted_code.getBytes();
+        mConnectedThread.write(send);
 
         setState(STATE_CONNECTED);
     }
